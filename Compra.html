@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPPER FISH</title>
+    
+
+    <link rel="stylesheet" href="HTML/CSS/peixes.css">
+    <link rel="stylesheet" href="HTML/CSS/style.css">
+    <link rel="stylesheet" href="HTML/CSS/compra.css">
+
+
+    <link rel="icon" type="image/png" href="imgs/logo-baleia.png">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap');
+    </style>
+
+</head>
+
+<body onload="exibirDetalhesProduto()">
+    <header class="header-video" >
+        <div class="header-principal">
+            <div class="container-header">
+                <h2 class="title-site">
+                    <a href="index.html" class="link-title" style="display: flex; justify-content: center; align-items: center;">
+                        FLIPPER FISH
+                        <img src="imgs/logo-baleia.png" height="80px">
+                    </a> </h2>
+
+                <input type="search" class="search" placeholder="Pesquisa">
+                
+                <form action="protect.php" method="post" class="container-login">
+                    <button class="btn-user" name="perfil" onclick="location.href='login.html'">
+                        <i class="fa fa-user"></i>
+                        <p>Login</p>
+                    </button>
+
+                
+                    <button class="btn-fav">
+                        <i class="fa fa-heart"></i>
+                        <p>Favoritos</p>
+                    </button>
+
+                    <button class="btn-cart" >
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>Carrinho</p>
+                    </button>
+                </form>
+            </div>
+
+            
+            <nav class="nav-opçoes" style="padding-bottom: 1%;">
+                <div class="btns-categoria">
+                    <a href="peixes.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Peixe
+                        </button>
+                    </a>
+                    <a href="aquario.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Aquario
+                        </button>
+                    </a>
+                    <a href="ferramenta.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Ferramenta
+                        </button>
+                    </a>
+                    <a href="ração.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Ração
+                        </button>
+                    </a>
+                    <a href="bomba.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Bomba
+                        </button>
+                    </a>
+                    <a href="decoração.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Decoração
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div style="
+                margin: 1vw; 
+                display: flex; 
+                justify-content: 
+                space-around; 
+                align-items: center;">
+
+        <aside style="  display: grid;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-content: space-around;
+                        row-gap: 40px;">
+            <img class="produto-img" src="" alt="" height="150px" width="150px" style="border-radius: 25px;" srcset="">
+            <img class="produto-img" src="" alt="" height="150px" width="150px" style="border-radius: 25px;" srcset="">
+            <img class="produto-img" src="" alt="" height="150px" width="150px" style="border-radius: 25px;" srcset="">
+            <img class="produto-img" src="" alt="" height="150px" width="150px" style="border-radius: 25px;" srcset="">
+        </aside>
+
+        <aside style="  
+                        padding: 25px; 
+                        margin: 25px; 
+                        width: 450px;;"> 
+            <img class="produto-img" src="" alt="" style="border-radius: 20px;" width="400px" srcset="">
+        </aside>
+            <section style="
+                            padding-block: 100px; 
+                            padding-inline: 50px;">
+
+                <h1 class="produto-nome"></h1>
+                <p>Marca: Nome da empresa</p>
+                
+                <h4>
+                    <ul class="avaliaçao" style="display: flex; align-items: baseline;">
+                        Avaliação: 
+                        <li class="star-icon ativo" value="1"></li>
+                        <li class="star-icon" value="2"></li>
+                        <li class="star-icon" value="3"></li>
+                        <li class="star-icon" value="4"></li>
+                        <li class="star-icon" value="5"></li>
+                    </ul>
+                </h4>
+
+                <h5>
+                    <h1>
+                        <span style="color: red;">
+                            -30%
+                        </span> 
+                        <span class="produto-preco"></sp>
+                    </h1>
+                    <h4>
+                        De: <span style="text-decoration: line-through;">R$699,99</span>
+                    </h4>
+                    
+                </h5>
+                    <section style="list-style: none; 
+                                    text-align: justify;">    
+                        <li>
+                            <span style="font-weight: bold; 
+                                        letter-spacing: 2px ;">
+                                Marca: 
+                            </span> Nome da empresa
+                        </li>
+                        <li>
+                            <span style="font-weight: bold; 
+                                        letter-spacing: 2px ;">
+                                Espécie-alvo: 
+                            </span> Peixe
+                        </li>
+                        <li>
+                            <span style="font-weight: bold; 
+                                        letter-spacing: 2px ;">
+                                Peso do produto: 
+                            </span>	Peso
+                        </li>
+                        <li>
+                            <span style="font-weight: bold; 
+                                        letter-spacing: 2px ;">
+                                Usos específicos do produto: 
+                            </span>	Exterior
+                        </li>
+                        <div id="detalhes-produto"></div>
+                    </section>
+            </section>
+
+            <section style="background-color: rgba(212, 212, 212, 0.493);
+                            border-radius: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 50px;
+                            text-align: center;">
+
+            
+                <h1 style="padding: 20px; 
+                            background-color: rgba(136, 136, 136, 0.274);
+                            border-radius: 10px;">
+                        <span class="produto-preco"></span>
+                </h1>
+
+                <li class="entrega">Endereço</li>
+
+
+                <h4 style="color: rgb(29, 134, 29); display: grid;">
+                    Em estoque
+                    <span style="color: black; margin-block: 15px;">
+                        Quantidade: 
+                        <span style="background-color: gray; padding-inline: 10px; border-radius: 10px;">
+                            10
+                        </span>
+                    </span>
+                </h4>
+                <button  class="btn-addcar">
+                    Adicionar ao carrinho
+                </button>
+
+                <button class="btn-compra">
+                    Comprar agora
+                </button>
+            </section>
+    </div>
+    <script src="Carrinho/Cart.js"></script>
+    <script>
+
+        // Função para obter os parâmetros da URL
+        function getParametroUrl(parametro) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parametro);
+        }
+
+        // Exibir informações do produto na página
+        function exibirDetalhesProduto() {
+            const produtoNome = getParametroUrl('nome');
+            const produtoPreco = getParametroUrl('preco');
+            const produtoImg = getParametroUrl('img')
+
+            if (produtoNome && produtoPreco && produtoImg ) {
+                document.querySelector('.produto-nome').innerText = produtoNome;
+
+                const PreçoProduto = document.querySelectorAll('.produto-preco');
+
+                PreçoProduto.forEach(function(preço) {
+                    preço.innerText = produtoPreco;
+                })       
+
+                const imagensProduto = document.querySelectorAll('.produto-img');
+
+                imagensProduto.forEach(function(img) {
+                    img.src = produtoImg;
+                });       
+
+        } else {
+                document.getElementById('detalhes-produto').innerText = 'Informações do produto não encontradas.';
+                console.log("Informações do produto não encontradas.")
+            }
+        }
+
+
+        var stars = document.querySelectorAll('.star-icon');
+                
+                document.addEventListener('click', function(e){
+                    var classStar = e.target.classList;
+                        if(!classStar.contains('ativo')){
+                            stars.forEach(function(star){
+                                star.classList.remove('ativo');
+                        });
+                            classStar.add('ativo');
+                            console.log(e.target.getAttribute('value'));
+                        }
+                });
+
+
+        
+    </script>
+</body>

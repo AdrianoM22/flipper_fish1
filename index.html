@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPPER FISH</title>
+
+    <link rel="stylesheet" href="HTML/CSS/style.css">
+
+    <link rel="icon" type="image/png" href="imgs/logo-baleia.png">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap');
+    </style>
+</head>
+<body>
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <form action="login.php" method="post">
+                <h1>Login</h1><hr>
+                <h3>Email</h3>
+                <input type="text" class="txtemail" name="email" placeholder="Digite seu Email" required>
+
+                <h3>Senha</h3>
+                <section class="container-password">
+                    <input type="password" class="txtsenha" id="password" name="senha" placeholder="Digite sua senha" required>
+                        <button id="show-pass" class="show-pass">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                </section>
+                <br>
+
+                <button class="btn-login">
+                    Entrar
+                </button> <br>
+
+                <button class="btn-nocad">
+                    Crie sua conta
+                </button>
+
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="modal-nocad">
+        <div class="nocad-container">
+            <form action="cadastro.php" method="post">
+                <h1>Cadastrar</h1><hr>
+                <h3>CPF</h3>
+                <input type="text" class="txtcad"  name="txtcadcpf" placeholder="Digite seu CPF" required>
+                <h3>Nome</h3>
+                <input type="text" class="txtcad"  name="txtcadnome" placeholder="Digite seu nome" required>
+            
+                <h3>Email</h3>
+                <input type="text" class="txtcad" name="txtcademail"  placeholder="Digite seu Email" required>
+                <h3>Senha</h3>
+
+                <section class="container-password">
+                    <input type="password" class="txtcad" id="passwordCad" name="txtcadsenha"   placeholder="Digite sua senha" required>
+                    <i class="fas fa-eye" id="show-pass-cad" class="show-pass"></i>
+                </section>
+
+                <h3>Repita a senha</h3>
+                <input type="password" class="txtcad" name="txtcadRepsenha"  placeholder="Digite sua senha novamente" required><br>
+                
+                <button class="btn-cadastrar">
+                    Cadastrar
+                </button> <br>
+
+                <button class="close-btn-cad">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <header class="header-video">
+        <section id="header-principal" class="header-principal">
+            <div class="container-header">
+                <h2 class="title-site">
+                    <a href="index.html" class="link-title" style="display: flex; justify-content: center; align-items: center;">
+                        FLIPPER FISH
+                        <img src="imgs/logo-baleia.png" height="80px">
+                    </a>
+                </h2>
+
+                <input type="search" class="search" placeholder="Pesquisa">
+                
+                <form action="protect.php" method="post" class="container-login">
+                    <button class="btn-user" name="perfil" onclick="location.href='login.html'">
+                        <i class="fa fa-user"></i>
+                        <p>Login</p>
+                    </button>
+                </form>
+
+                <button class="btn-fav" onclick="window.location.href = 'Favoritos.html'">
+                    <i class="fa fa-heart"></i>
+                    <p>Favoritos</p>
+                </button>
+
+                <button class="btn-cart" onclick="window.location.href = 'Carrinho.html'">
+                    <i class="fa fa-shopping-cart"></i>
+                    <p>Carrinho</p>
+                </button>
+            </div>
+
+            
+            <nav class="nav-opçoes">
+                <div class="btns-categoria">
+                    <a href="peixes.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Peixe
+                        </button>
+                    </a>
+                    <a href="aquario.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Aquario
+                        </button>
+                    </a>
+                    <a href="ferramenta.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Ferramenta
+                        </button>
+                    </a>
+                    <a href="ração.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Ração
+                        </button>
+                    </a>
+                    <a href="bomba.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Bomba
+                        </button>
+                    </a>
+                    <a href="decoração.html" class="btn-categ">
+                        <button class="btn-cat">
+                            Decoração
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="section-img">
+            <div class="img-container">
+                <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <img src="imgs/img-propaganda/prop2.jpg" alt="" id="slide-show">
+
+                <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+        
+        <div class="transição-cor"></div>
+    </header>
+    
+    <main>
+        <!-- <nav class="nav-principal">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="imgs/logo.png" class="nav-logo">
+                    
+                </div>
+            </div>
+        </nav> -->
+
+
+
+        
+
+
+        <section class="section-opçoes">
+            <div class="container-opçoes">
+
+            <a href="peixes.html">
+                <button class="card">
+                    <div class="image-box">
+                        <img src="imgs/peixe-opçoes.jpg">
+                    </div>
+            
+                    <div class="content">
+                        <h2>Peixes</h2>
+                        <P>dos mais variados</P>
+                    </div>
+                </button>
+            </a>
+            <a href="aquario.html">
+                <button class="card">
+                <div class="image-box">
+                    <img src="imgs/aquario.jpeg">
+                </div>
+        
+                <div class="content">
+                    <h2>Aquarios</h2>
+                    <P>de varios tamanhos</P>
+                </div>
+            </button></a>
+                
+            <a href="bomba.html">
+                <button class="card">
+                    <div class="image-box">
+                        <img src="imgs/bomba.jpeg">
+                    </div>
+            
+                    <div class="content">
+                        <h2>Bombas</h2>
+                        <P>para seu Aquario</P>
+                    </div>
+                </button>
+            </a>
+                
+            <a href="decoração.html">
+                <button class="card">
+                    <div class="image-box">
+                        <img src="imgs/decoração.jpeg">
+                    </div>
+            
+                    <div class="content">
+                        <h2>Decorações</h2>
+                        <P>para seu Aquario</P>
+                    </div>
+                </button>
+            </a>
+            
+            <a href="ferramenta.html">
+                <button class="card">
+                    <div class="image-box">
+                        <img src="imgs/ferramenta.jpg">
+                    </div>
+            
+                    <div class="content">
+                        <h2>Ferramentas</h2>
+                        <P>para Aquario</P>
+                    </div>
+                </button>
+            </a>
+                
+            <a href="ração.html">
+                <button class="card">
+                    <div class="image-box">
+                        <img src="imgs/peixes-racao.jpg">
+                    </div>
+            
+                    <div class="content">
+                        <h2>Ração</h2>
+                        <P>para seus peixes</P>
+                    </div>
+                </button>
+            </a>
+                
+
+            </div>
+        </section>
+
+
+        <section class="section-produtos">
+
+
+            <header class="sugestoes-produto">
+                <h1>Sugestões para você</h1>
+                <div class="underline"></div>
+            </header>
+
+            <div class="container-produtos">
+                <!-- ><div class="produto">
+                    <img src="imgPeixes/7.Barbo.Tinfoil.jpg" alt="" class="img-sugestoes-produtos">
+                    <h3 class="nome-produto">Barbo Tinfoil 4-8cm</h3>
+                    <p><span class="preço">R$ 169,11</span> no PIX</p>
+                    <p>179,90 até <span class="preço">3x</span> de <span class="preço">R$59,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+                
+                <div class="produto">
+                    <img src="imgPeixes/7.Barbo.Tinfoil.jpg" alt="" class="img-sugestoes-produtos">
+                    <h3 class="nome-produto">Barbo Tinfoil 4-8cm</h3>
+                    <p><span class="preço">R$ 169,11</span> no PIX</p>
+                    <p>179,90 até <span class="preço">3x</span> de <span class="preço">R$59,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="imgPeixes/7.Barbo.Tinfoil.jpg" alt="" class="img-sugestoes-produtos">
+                    <h3 class="nome-produto">Barbo Tinfoil 4-8cm</h3>
+                    <p><span class="preço">R$ 169,11</span> no PIX</p>
+                    <p>179,90 até <span class="preço">3x</span> de <span class="preço">R$59,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto">
+                    <img src="imgPeixes/7.Barbo.Tinfoil.jpg" alt="" class="img-sugestoes-produtos">
+                    <h3 class="nome-produto">Barbo Tinfoil 4-8cm</h3>
+                    <p><span class="preço">R$ 169,11</span> no PIX</p>
+                    <p>179,90 até <span class="preço">3x</span> de <span class="preço">R$59,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>-->
+            </div>
+        </section>
+        
+        <section class="section-aquario">
+            <header class="aquario-produto">
+                <h1>Aquarios</h1>
+                <div class="underline-aquario"></div>
+            </header>
+            <div class="container-aquario">
+                <!--<div class="produto-aquario">
+                    <img src="imgs/Aquario-Alto-Costa-Mar.png" alt="" class="img-aquario-produto">
+                    <h3 class="nome-produto">Aquário Alto Costa Mar</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+                
+                <div class="produto-aquario">
+                    <img src="imgs/Aquario-Alto-Costa-Mar.png" alt="" class="img-aquario-produto">
+                    <h3 class="nome-produto">Aquário Alto Costa Mar</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+                <div class="produto-aquario">
+                    <img src="imgs/Aquario-Alto-Costa-Mar.png" alt="" class="img-aquario-produto">
+                    <h3 class="nome-produto">Aquário Alto Costa Mar</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+                <div class="produto-aquario">
+                    <img src="imgs/Aquario-Alto-Costa-Mar.png" alt="" class="img-aquario-produto">
+                    <h3 class="nome-produto">Aquário Alto Costa Mar</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>-->
+
+            </div>
+        </section>
+
+
+        <section class="section-outros">
+            <header class="outros-produto">
+                <h1>Outros</h1>
+                <div class="underline-outros"></div>
+            </header>
+
+            <div class="container-outros">
+                <!--<div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+                
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>
+
+                <div class="produto-aquario">
+                    <img src="imgs/decoração.jpeg" alt="" class="img-outros-produtos">
+                    <h3 class="nome-produto">Decoração para Aquário</h3>
+                    <p><span class="preço">R$ 759,99</span> no PIX</p>
+                    <p>799,90 até <span class="preço">12x</span> de <span class="preço">R$66,96</span> sem juros</p>
+                    <button class="Comprar" onClick="location.href='Compra.html'">Comprar</button>
+                </div>-->
+
+            </div>
+        </section>
+
+
+        <section class="section-peixes">
+            <header class="peixe-produto">
+                <h1>Peixes</h1>
+                <div class="underline-peixe"></div>
+            </header>
+
+            <div class="container-peixe">
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+                <a href="peixes.html" class="link-peixe">
+                    <img src="imgPeixes/30.Oscar.Red.Tiger.Albino.jpg" alt="" class="img-peixe-produtos" >
+                </a>
+            </div>
+        </section>
+
+        <div class="transição-cor"></div>
+    </main>
+
+    <footer class="footer-principal">
+            <button class="btn-voltar-inicio" onclick="location.href='#header-principal'">
+                Voltar ao Inicio
+            </button>
+            <div class="container-contatos">
+                <div class="Lado-A">
+                    <button class="btn-contato">
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+
+                    <button class="btn-contato">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+
+                    <button class="btn-contato">
+                        <i class="fa fa-phone"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+                </div>
+
+                <div class="Lado-B">
+                    <button class="btn-contato">
+                        <i class="fa fa-instagram"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+
+                    <button class="btn-contato">
+                        <i class="fa fa-telegram"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+
+                    <button class="btn-contato">
+                        <i class="fa fa-twitter"></i>
+                        <i class="txt-contato">XXXX</i>
+                    </button>
+                </div>
+            </div>
+            <div class="underline-footer"></div>
+            <div class="footer-condiçoes">
+                <p>Condições de UsoNotificação de PrivacidadeCookiesAnúncios Baseados em Interesses</p>
+
+                <p>© 2024 xxxxxxx, Inc.</p>
+
+                <p>Av. xxxxxxxxxxxx, xxxx, xxxx, xx° andar - São Paulo CEP: xxxxx-xxx | Fale conosco| 
+                ajuda-xxxxxx@xxxxxx.com.br</p>
+
+                <p>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p>
+            </div>
+    </footer>
+
+    <script src="JS/Carrosel/carrosel-header.js"></script>
+    <script src="JS/Produto.js"></script>
+    <!--<script src="JS/Carrosel/carrosel-sugestoes-produtos.js"></script>
+    <script src="JS/Carrosel/carrosel-aquario-produto.js"></script>-->
+
+</body>
+</html>
